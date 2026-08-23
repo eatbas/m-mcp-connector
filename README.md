@@ -1,1 +1,1 @@
-# -m-mcp-connector
+# m-mcp-connector
