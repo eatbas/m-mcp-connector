@@ -1,0 +1,60 @@
+{
+  "name": "@atbas/m-mcp-connector",
+  "version": "1.0.0",
+  "description": "stdio-to-HTTP bridge for MCP clients that cannot reach a remote Streamable HTTP server.",
+  "license": "MIT",
+  "author": "Eren Atbas <eren.atbas@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eatbas/m-mcp-connector.git"
+  },
+  "homepage": "https://m-mcp.atbas.xyz/",
+  "bugs": {
+    "url": "https://github.com/eatbas/m-mcp-connector/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "jazzcash",
+    "dgpays",
+    "stdio"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "bin": {
+    "m-mcp-connector": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
+  }
+}

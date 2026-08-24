@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "comment": "`src/testing/**` is excluded alongside the tests: it is scaffolding for this package's own suite, and a published package has no business shipping a stub of the service it talks to.",
+  "compilerOptions": { "rootDir": "src", "noEmit": false },
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.test.ts", "src/testing/**"]
+}
