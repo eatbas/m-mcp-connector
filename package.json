@@ -1,6 +1,6 @@
 {
   "name": "@atbas/m-mcp-connector",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "stdio-to-HTTP bridge for MCP clients that cannot reach a remote Streamable HTTP server.",
   "license": "MIT",
   "author": "Eren Atbas <eren.atbas@gmail.com>",

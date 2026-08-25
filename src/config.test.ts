@@ -9,8 +9,8 @@ import { LOG_LEVEL_ENV_VAR } from './logger.js';
  * assertions are about the parser, and a real token in a test file would be a
  * credential in version control.
  */
-const TOKEN = `mcp_test_${'a1b2c3d4'.repeat(4)}`;
-const OTHER_TOKEN = `mcp_test_${'z9y8x7w6'.repeat(4)}`;
+const TOKEN = `m_mcp_${'a1b2c3d4'.repeat(4)}`;
+const OTHER_TOKEN = `m_mcp_${'z9y8x7w6'.repeat(4)}`;
 
 const ENDPOINT = 'https://hosted.example.test/mcp';
 

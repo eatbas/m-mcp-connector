@@ -30,4 +30,4 @@
 export const CONNECTOR_NAME = '@atbas/m-mcp-connector';
 
 /** Kept in step with `package.json`'s `version` by `version.test.ts`. */
-export const CONNECTOR_VERSION = '1.0.0';
+export const CONNECTOR_VERSION = '1.1.0';

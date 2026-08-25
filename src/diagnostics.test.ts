@@ -10,7 +10,7 @@ import {
   TOKEN_QUERY_PARAMETER,
 } from './diagnostics.js';
 
-const SECRET = 'mcp_test_abcdefghijklmnop';
+const SECRET = 'm_mcp_abcdefghijklmnop';
 
 describe('redactSecrets', () => {
   it('removes every occurrence, not just the first', () => {

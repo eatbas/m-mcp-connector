@@ -4,7 +4,7 @@ import { REDACTED } from './diagnostics.js';
 import { createLogger, DEFAULT_LOG_LEVEL, LOG_LEVELS, resolveLogLevel, writeToStandardError } from './logger.js';
 import type { Logger, LogLevel } from './logger.js';
 
-const SECRET = 'mcp_test_abcdefghijklmnop';
+const SECRET = 'm_mcp_abcdefghijklmnop';
 
 interface Harness {
   readonly logger: Logger;

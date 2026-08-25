@@ -30,7 +30,7 @@ import { z } from 'zod';
  * transport and redaction, and a real token in a test file would be a
  * credential in version control.
  */
-export const TEST_TOKEN = `mcp_test_${'a1b2c3d4'.repeat(4)}`;
+export const TEST_TOKEN = `m_mcp_${'a1b2c3d4'.repeat(4)}`;
 
 /** Endpoint the stub answers for. `.test` is reserved by RFC 2606 and resolves nowhere. */
 export const TEST_ENDPOINT_URL = 'https://hosted.example.test/mcp';
